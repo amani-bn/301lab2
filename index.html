@@ -9,29 +9,60 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/module.css">
+
+    <script id='template-dis' type='text/x-tmpl-mustache'>
+      <div class="{{keyword}}">
+        <h2>{{title}}</h2>
+        <br>
+        <img src="{{image_url}}" alt="">
+         <br>
+         <p>{{description}} </p>
+      </div>
+    </script>
+    
   </head>
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
+      <br>
       <select>
         <option value="default">Filter by Keyword</option>
       </select>
+
+      <!-- <select >
+        <option> Sort By</option>
+        <option value="Horns"> Horns Number</option>
+        <option value="Title"> Title</option>
+      </select> -->
+      <nav>
+        <button id="page1">First Page</button>
+        <button id="page2">Second Page</button>
+      <nav>
+   
+
+        <nav>
+        <button id="hornsNum">Horns Number Sort</button>
+        <button id="titleSort">Title Sort</button>
+      </nav> 
+
     </header>
     <main>
-      <div class="photo-template">
+      <section id="animal"></section>
+      <!-- <div class="photo-template">
         <h2></h2>
         <br>
         <img src="" alt="">
         <br>
         <br>
         <p></p>
-      </div>
+      </div> -->
     </main>
     <footer>
-     &copy; 2018 Code Fellows
+      &copy; 2018 Code Fellows
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
     <script src="JS/app.js"></script>
   </body>
 </html>
